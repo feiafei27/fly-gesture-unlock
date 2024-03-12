@@ -94,16 +94,6 @@ npm install fly-gesture-unlock
       events: {
         'end': gestureEnd,
       },
-      config: {
-        arrow: {
-          show: true,
-          size: 6,
-          distance: 16,
-        },
-        isAnchorRepeatSelect: true,
-        isLineCoverAnchor: false,
-        isLineAutoSelect: true,
-      },
     });
   });
 
@@ -113,17 +103,22 @@ npm install fly-gesture-unlock
   };
 </script>
 
-<style scoped lang="less">
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
   .page-container {
-    height: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    #container {
-      background-color: #ffffff;
-      margin: 20px 0;
-    }
+    background-color: #446693;
+  }
+
+  #container {
+    background-color: #ffffff;
   }
 </style>
 ```
