@@ -1,6 +1,6 @@
 ## ✨ Fly Gesture Unlock
 
-Fully functional and powerful web-based gesture unlocking library
+Fully functional and powerful web-based gesture unlocking library, one stop solution for gesture unlocking related services
 
 ## 🎉 All of my open source libraries
 > fly-barrage: Web based barrage library, recommended by Gitee.
@@ -50,6 +50,7 @@ npm install fly-gesture-unlock
   import GestureUnlockRenderer, { Anchor } from 'fly-gesture-unlock';
   import { ref, onMounted } from 'vue';
 
+  // 定义额外状态
   type ExtraStatus = never;
 
   const container = ref();

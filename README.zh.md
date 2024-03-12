@@ -1,9 +1,9 @@
 ## ✨ Fly Gesture Unlock
 
-功能完善，强大的 web 端手势解锁库
+功能完善，强大的 web 端手势解锁库，一站式解决手势解锁相关业务。
 
 ## 🎉 我的所有开源库
-> fly-barrage: web 端弹幕库，gitee 推荐项目。
+> fly-barrage: web 端弹幕库，Gitee 推荐项目。
 > 
 > gitee: https://gitee.com/fei_fei27/fly-barrage;
 > 
@@ -50,6 +50,7 @@ npm install fly-gesture-unlock
   import GestureUnlockRenderer, { Anchor } from 'fly-gesture-unlock';
   import { ref, onMounted } from 'vue';
 
+  // 定义额外状态
   type ExtraStatus = never;
 
   const container = ref();
