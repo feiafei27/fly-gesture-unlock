@@ -27,6 +27,9 @@
           <el-button @click="gotoPage('/repeatSelect')" type="primary">
             重复选择
           </el-button>
+          <el-button @click="gotoPage('/lineAutoSelect')" type="primary">
+            线段自动选中
+          </el-button>
         </el-button-group>
       </div>
       <div>

@@ -8,6 +8,7 @@ import ArbitraryLocationSize from '../views/arbitrary-location-size.vue';
 import RepeatSelect from '../views/repeat-select.vue';
 import ExtraStatus from '../views/extra-status.vue';
 import CustomStyle from '../views/custom-style.vue';
+import LineAutoSelect from '../views/line-auto-select.vue';
 
 const routes = [
   { path: '/', component: InitialSetup },
@@ -18,6 +19,7 @@ const routes = [
   { path: '/repeatSelect', component: RepeatSelect },
   { path: '/extraStatus', component: ExtraStatus },
   { path: '/customStyle', component: CustomStyle },
+  { path: '/lineAutoSelect', component: LineAutoSelect },
 ]
 
 const router = createRouter({

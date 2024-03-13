@@ -66,9 +66,6 @@ onMounted(() => {
         size: 6,
         distance: 10,
       },
-      isAnchorRepeatSelect: false,
-      isLineCoverAnchor: false,
-      isLineAutoSelect: true,
     },
   });
 });

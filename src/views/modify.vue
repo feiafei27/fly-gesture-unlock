@@ -198,9 +198,6 @@ onMounted(() => {
         size: 6,
         distance: 16,
       },
-      isAnchorRepeatSelect: false,
-      isLineCoverAnchor: false,
-      isLineAutoSelect: true,
     },
   });
 });

@@ -20,8 +20,19 @@ export default class GestureUnlockRenderer<ExtraStatus extends string> {
   lineStatusStyles: LineStatusStyles<ExtraStatus>;
   // 事件回调配置
   events?: Events<ExtraStatus>;
+  // 默认配置
+  defaultConfig: Config = {
+    arrow: {
+      show: true,
+      size: 5,
+      distance: 16,
+    },
+    isLineCoverAnchor: false,
+    isLineAutoSelect: false,
+    isAnchorRepeatSelect: false,
+  };
   // 业务方面的配置
-  config: Config;
+  config: Config = this.defaultConfig;
 
   // 锚点实例数组
   private anchors: Anchor<ExtraStatus>[];
@@ -57,7 +68,7 @@ export default class GestureUnlockRenderer<ExtraStatus extends string> {
 
     this.events = events;
 
-    this.config = Object.assign(DEFAULT_CONFIG, config);
+    Object.assign(this.config, config ?? {});
 
     // 处理 DOM 相关
     this.handleDOM(this.container, this.canvas, this.ctx);
@@ -470,7 +481,7 @@ export default class GestureUnlockRenderer<ExtraStatus extends string> {
    */
   public resize(anchorDefines: AnchorDefine[], config: Partial<Config> = {}) {
     // 设置 config
-    this.config = Object.assign(this.config, config);
+    Object.assign(this.config, config);
     
     // 重新设置 Canvas 宽高
     this.canvas.width = this.container?.clientWidth ?? 0;
@@ -613,20 +624,6 @@ export type Arrow = {
  * 锚点中的箭头配置
  */
 export type AnchorArrow = Partial<Omit<Arrow, 'show'>>;
-
-/**
- * 默认配置
- */
-const DEFAULT_CONFIG: Config = {
-  arrow: {
-    show: true,
-    size: 5,
-    distance: 16,
-  },
-  isLineCoverAnchor: false,
-  isLineAutoSelect: false,
-  isAnchorRepeatSelect: false,
-}
 
 /*
 * start：开始绘制时；
