@@ -2,6 +2,10 @@
 
 功能完善，强大的 web 端手势解锁库，一站式解决手势解锁相关业务。
 
+![npm](https://img.shields.io/npm/l/fly-gesture-unlock.svg)
+![npm](https://img.shields.io/npm/dt/fly-gesture-unlock.svg)
+![npm](https://img.shields.io/npm/v/fly-gesture-unlock/latest.svg)
+
 ## 🎉 我的所有开源库
 > fly-barrage: web 端弹幕库，Gitee 推荐项目。
 > 

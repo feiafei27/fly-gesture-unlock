@@ -2,6 +2,10 @@
 
 Fully functional and powerful web-based gesture unlocking library, one stop solution for gesture unlocking related services
 
+![npm](https://img.shields.io/npm/l/fly-gesture-unlock.svg)
+![npm](https://img.shields.io/npm/dt/fly-gesture-unlock.svg)
+![npm](https://img.shields.io/npm/v/fly-gesture-unlock/latest.svg)
+
 ## 🎉 All of my open source libraries
 > fly-barrage: Web based barrage library, recommended by Gitee.
 >
